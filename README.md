@@ -2,9 +2,6 @@
 
 Notify Verse is a modern, responsive announcement platform built with Next.js, Firebase, and TailwindCSS. The application allows users to sign in with Google authentication, post announcements, and view announcements from other users in a sleek, dark-themed interface.
 
-<img width="354" height="306" alt="Screenshot_2025-07-19_120306-removebg-preview" src="https://github.com/user-attachments/assets/8e474203-4c3d-47ca-bb58-8ec28a42ee70" />
-
-
 ## Features
 
 - **Google Authentication**: Secure user authentication using Firebase Auth
