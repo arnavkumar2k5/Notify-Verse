@@ -20,13 +20,18 @@ export default function LoginPage() {
     }
   }, [user, router, mounted]);
 
+  // Function to handle Google sign in
   const handleGoogleSignIn = async () => {
     try {
       setError(null);
       await signInWithGoogle();
-    } catch (err: Error | unknown) {
-      const errorMessage = err instanceof Error ? err.message : 'Failed to sign in with Google';
-      setError(errorMessage);
+    } catch (err) {
+      // Safe type handling without explicit 'any'
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError('Failed to sign in with Google');
+      }
     }
   };
 
